@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Content Generator</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            padding: 20px;
+        }
+        #story {
+            margin-top: 20px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            background-color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <h1>Creative Content Generator</h1>
+    <label for="topic">Topic:</label>
+    <input type="text" id="topic" placeholder="Enter a topic"><br><br>
+
+    <label for="character">Character:</label>
+    <input type="text" id="character" placeholder="Enter a character name"><br><br>
+
+    <label for="tone">Tone:</label>
+    <select id="tone">
+        <option value="adventurous">Adventurous</option>
+        <option value="humorous">Humorous</option>
+        <option value="dramatic">Dramatic</option>
+    </select><br><br>
+
+    <button onclick="generateStory()">Generate Story</button>
+
+    <div id="story"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
